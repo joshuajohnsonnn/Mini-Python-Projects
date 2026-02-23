@@ -1,0 +1,13 @@
+print("How Old will I be in.....")
+
+age1 = int(input("Enter your year of birth: "))
+
+while age1 < 1900 or age1 > 2025:
+    print("Please enter a valid year of birth between 1900 and 2025.")
+    age1 = int(input("Enter your year of birth: "))
+    
+the_year = int(input("Enter the year you want to know your age in: "))
+age = the_year - age1
+
+print(f"You will be {age} years old in the year {the_year}.")
+
