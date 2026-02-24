@@ -8,6 +8,7 @@ def roll_dice():
         time.sleep(1)
         roll = random.randint(1, 6)
         print(f"Roll {i + 1}: You rolled a {roll}")
+        time.sleep(1)
     
 roll_dice()
     
