@@ -20,34 +20,40 @@ def interactive_quiz():
             "options": ["A) Elephant", "B) Blue Whale", "C) Giraffe", "D) Hippopotamus"],
             "answer": "B"
         },
-        
         {
             "question": "Who wrote 'Romeo and Juliet'?",
             "options": ["A) Charles Dickens", "B) William Shakespeare", "C) Mark Twain", "D) Jane Austen"],
             "answer": "B"
         },
-        
         {
             "question": "What is the chemical symbol for water?",
             "options": ["A) H2O", "B) CO2", "C) O2", "D) NaCl"],
             "answer": "A"
         },
-        
         {
             "question": "Which country is known as the Land of the Rising Sun?",
             "options": ["A) China", "B) Japan", "C) South Korea", "D) Thailand"],
             "answer": "B"
         },
-        
         {
             "question": "What is the largest organ in the human body?",
             "options": ["A) Heart", "B) Liver", "C) Skin", "D) Lungs"],
+            "answer": "C"
+        },
+        {
+            "question": "Who painted the Mona Lisa?",
+            "options": ["A) Vincent van Gogh", "B) Pablo Picasso", "C) Leonardo da Vinci", "D) Michelangelo"],
+            "answer": "C"
+        },
+        {
+            "question": "What is the smallest prime number?",
+            "options": ["A) 0", "B) 1", "C) 2", "D) 3"],
             "answer": "C"
         }
     ]
 
     score = 0
-    for i in range(7): 
+    for i in range(9): 
         options = random.choice(questions)
         print(options["question"])
 
@@ -63,7 +69,7 @@ def interactive_quiz():
             print(f"Wrong! The correct answer was {options['answer']}.")
             time.sleep(2)
     
-    print(f"Your final score is {score} out of 7.")
+    print(f"Your final score is {score} out of 9.")
 
 while True:
     interactive_quiz()
