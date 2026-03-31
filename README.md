@@ -1,4 +1,5 @@
-# Mini Python Projects 🐍
+# Mini Python Projects 🐍 
+[![Status: In Development](https://img.shields.io/badge/status-in--development-orange.svg)]()
 
 A simple collection of small Python projects for practice and learning.
 
