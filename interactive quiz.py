@@ -49,11 +49,77 @@ def interactive_quiz():
             "question": "What is the smallest prime number?",
             "options": ["A) 0", "B) 1", "C) 2", "D) 3"],
             "answer": "C"
+        },
+        
+        {
+            "question": "Which gas do plants absorb from the atmosphere?",
+            "options": ["A) Oxygen", "B) Carbon Dioxide", "C) Nitrogen", "D) Hydrogen"],
+            "answer": "B"
+        },
+        
+        {
+            "question": "What is the hardest natural substance on Earth?",
+            "options": ["A) Gold", "B) Iron", "C) Diamond", "D) Quartz"],
+            "answer": "C"
+        },
+        
+        {
+            "question": "Which ocean is the largest?",
+            "options": ["A) Atlantic Ocean", "B) Indian Ocean", "C) Arctic Ocean", "D) Pacific Ocean"],
+            "answer": "D"
+        },
+        
+        {
+            "question": "What is the main ingredient in guacamole?",
+            "options": ["A) Tomato", "B) Avocado", "C) Onion", "D) Pepper"],
+            "answer": "B"
+        },
+        
+        {
+            "question": "Who is known as the Father of Computers?",
+            "options": ["A) Charles Babbage", "B) Alan Turing", "C) Bill Gates", "D) Steve Jobs"],
+            "answer": "A"
+        },
+        
+        {
+            "question": "What is the currency of Japan?",
+            "options": ["A) Yen", "B) Dollar", "C) Euro", "D) Pound"],
+            "answer": "A"
+        },
+        
+        {
+            "question": "Which element has the chemical symbol 'O'?",
+            "options": ["A) Gold", "B) Oxygen", "C) Silver", "D) Iron"],
+            "answer": "B"
+        },
+        
+        {
+            "question": "What is the tallest mountain in the world?",
+            "options": ["A) K2", "B) Kangchenjunga", "C) Mount Everest", "D) Lhotse"],
+            "answer": "C"
+        },
+        
+        {
+            "question": "Which planet is closest to the Sun?",
+            "options": ["A) Venus", "B) Earth", "C) Mercury", "D) Mars"],
+            "answer": "C"
+        },
+        
+        {
+            "question": "What is the largest continent by land area?",
+            "options": ["A) Africa", "B) Asia", "C) Europe", "D) North America"],
+            "answer": "B"
+        },
+        
+        {
+            "question": "Who discovered penicillin?",
+            "options": ["A) Marie Curie", "B) Alexander Fleming", "C) Louis Pasteur", "D) Thomas Edison"],
+            "answer": "B"
         }
     ]
 
     score = 0
-    for i in range(9): 
+    for i in range(10): 
         options = random.choice(questions)
         print(options["question"])
 
@@ -69,11 +135,11 @@ def interactive_quiz():
             print(f"Wrong! The correct answer was {options['answer']}.")
             time.sleep(2)
     
-    print(f"Your final score is {score} out of 9.")
+    print(f"Your final score is {score} out of 10.")
 
 while True:
     interactive_quiz()
     play_again = input("Do you want to play again? (yes/no): ").strip().lower()
     if play_again != "yes":
-        print("Thanks for playing! Goodbye!")
+        print("Thanks for playing, Goodbye!")
         break   
