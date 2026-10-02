@@ -6,8 +6,8 @@ print("=" * 40)
 while True:
     try:
         order_value = float(input("💰 Enter the amount you spent: $"))
+        print("❌ Amount cannot be negative." if order_value < 0 else "")
         if order_value < 0:
-            print("❌ Amount cannot be negative.")
             continue
         break
     except ValueError:
@@ -22,7 +22,7 @@ while True:
     delivery_choice = input("\nChoose delivery (1 or 2): ")
 
     if delivery_choice == "1":
-        delivery = "Standard Delivery"
+        delivery = "Standard Delivery" 
         delivery_cost = 3.49
         break
 
