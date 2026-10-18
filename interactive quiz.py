@@ -135,11 +135,11 @@ def interactive_quiz():
             print(f"Wrong! The correct answer was {options['answer']}.")
             time.sleep(2)
     
-    print(f"Your final score is {score} out of 10.")
+    print(f"\n Your final score is {score} out of 10.")
 
 while True:
     interactive_quiz()
-    play_again = input("Do you want to play again? (yes/no): ").strip().lower()
+    play_again = input("\n Do you want to play again? (yes/no): ").strip().lower()
     if play_again != "yes":
         print("Thanks for playing, Goodbye!")
         break   
