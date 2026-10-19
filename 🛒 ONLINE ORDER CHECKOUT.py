@@ -6,7 +6,7 @@ print("=" * 40)
 while True:
     try:
         order_value = float(input("💰 Enter the amount you spent: $"))
-        print("❌ Amount cannot be negative." if order_value < 0 else "")
+        print("❌ Amount cannot be negative." if order_value < 0 else "✅ Amount accepted.")
         if order_value < 0:
             continue
         break
