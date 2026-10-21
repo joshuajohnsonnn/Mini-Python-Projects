@@ -41,7 +41,7 @@ if order_value >= 20 and delivery_choice == "1":
 
 TOTAL = order_value + delivery_cost
 
-## Receipt
+## Receipt details
 print("\n" + "=" * 40)
 print("             🧾 RECEIPT")
 print("=" * 40)
@@ -52,5 +52,7 @@ print(f"Delivery Cost:    ${delivery_cost:.2f}")
 print("-" * 40)
 print(f"TOTAL:            ${TOTAL:.2f}")
 print("=" * 40)
+
+#--
 
 print("✅ Thank you for your order!")
