@@ -22,8 +22,7 @@ while True:
     with open("To-Do-List.txt", "w") as file:
         file.write("My To-Do List:\n")
         file.write("======================\n")
-      
+        
         for index, task in enumerate(Tasks, start=1):
             file.write(f"{index}. {task}\n")
-
-os.startfile("To-Do-List.txt")
+      
