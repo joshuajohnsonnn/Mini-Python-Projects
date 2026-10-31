@@ -17,4 +17,4 @@ It’s mainly for those who want to improve their Python skills by building smal
 Clone the repo:
 
 ```bash
-git clone https://github.com/your-username/mini-python-projects.git
+git clone https://github.com/joshuajohnsonnn/mini-python-projects.git
