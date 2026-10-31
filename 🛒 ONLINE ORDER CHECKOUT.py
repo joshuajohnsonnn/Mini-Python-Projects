@@ -1,3 +1,6 @@
+from email.headerregistry import Address
+
+
 print("=" * 40)
 print("       🛒 ONLINE ORDER CHECKOUT")
 print("=" * 40)
@@ -41,6 +44,8 @@ if order_value >= 20 and delivery_choice == "1":
 
 TOTAL = order_value + delivery_cost
 
+Address = input("\n🏠 Enter your delivery address: ")
+
 ## Receipt details
 print("\n" + "=" * 40)
 print("             🧾 RECEIPT")
@@ -56,3 +61,4 @@ print("=" * 40)
 #--
 
 print("✅ Thank you for your order!")
+print(f"📦 Your order will be delivered to: {Address}")
