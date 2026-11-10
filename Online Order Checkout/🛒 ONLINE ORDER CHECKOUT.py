@@ -17,7 +17,7 @@ while True:
 
 ##### Delivery options
 print("\n🚚 Delivery Options")
-print("1. Standard Delivery - $3.49")
+print("1. Standard Delivery - $3.49") 
 print("2. Next Day Delivery - $4.99")
 
 while True:
