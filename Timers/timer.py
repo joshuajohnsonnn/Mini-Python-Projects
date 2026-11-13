@@ -1,4 +1,4 @@
-import time
+from time import sleep
 from datetime import datetime, timedelta
 
 hours = int(input("Enter hours: "))
@@ -9,6 +9,6 @@ end_time = datetime.now() + timedelta(seconds=total_seconds)
 
 print(f"Alarm will go off at {end_time.strftime('%H:%M:%S')}")
 
-time.sleep(total_seconds)
+sleep(total_seconds)
 
 print("WAKE UP!")
