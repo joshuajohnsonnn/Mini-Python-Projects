@@ -8,4 +8,3 @@ file_name = "diary.txt"
 file = open(file_name, "a")
 current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 file.write(f"{current_time} - {user_input}\n")
-file.close()

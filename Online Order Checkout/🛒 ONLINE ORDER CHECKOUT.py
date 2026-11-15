@@ -45,6 +45,12 @@ TOTAL = order_value + delivery_cost
 
 Address = input("\n🏠 Enter your delivery address: ")
 
+Payment_Method = input("💳 Enter your payment method (e.g., Credit Card, PayPal): ")
+
+if Payment_Method.lower() == "paypal":
+    import paypalpayment
+else:
+    import cardpayment
 ## Receipt details
 print("\n" + "=" * 40)
 print("             🧾 RECEIPT")
@@ -61,3 +67,13 @@ print("=" * 40)
 
 print("✅ Thank you for your order!")
 print(f"📦 Your order will be delivered to: {Address}")
+print(f"💳 Payment Method: {Payment_Method}")
+if Payment_Method.lower() == "paypal":
+    print(f"Paypal email address entered: {paypalpayment.userinput}")
+else:
+    print("Payment details entered:")
+    print(f"Cardholder Name: {cardpayment.cardholder_name}")
+    print(f"Card Number: {cardpayment.card_number}")
+    print(f"Expiry Date: {cardpayment.expiry_date}")
+    print(f"Sort Code: {cardpayment.sort_code}")
+    print(f"CVV: {cardpayment.cvv}")
