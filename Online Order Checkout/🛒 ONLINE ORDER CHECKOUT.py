@@ -61,6 +61,7 @@ print(f"Delivery:         {delivery}")
 print(f"Delivery Cost:    ${delivery_cost:.2f}")
 print("-" * 40)
 print(f"TOTAL:            ${TOTAL:.2f}")
+print(f"VAT (20%) Included:        ${TOTAL * 0.2:.2f}")
 print("=" * 40)
 
 #--
