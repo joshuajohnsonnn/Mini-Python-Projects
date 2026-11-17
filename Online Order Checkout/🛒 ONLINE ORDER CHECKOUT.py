@@ -25,12 +25,12 @@ while True:
 
     if delivery_choice == "1":
         delivery = "Standard Delivery" 
-        delivery_cost = 3.49
+        DELIVERY_COST = 3.49
         break
 
     elif delivery_choice == "2":
         delivery = "Next Day Delivery"
-        delivery_cost = 4.99
+        DELIVERY_COST = 4.99
         break
 
     else:
@@ -38,10 +38,10 @@ while True:
 
 ###### Free standard delivery over $20
 if order_value >= 20 and delivery_choice == "1":
-    delivery_cost = 0
+    DELIVERY_COST = 0
     delivery = "Standard Delivery (FREE)"
 
-TOTAL = order_value + delivery_cost
+TOTAL = order_value + DELIVERY_COST
 
 Address = input("\n🏠 Enter your delivery address: ")
 
@@ -58,10 +58,10 @@ print("=" * 40)
 
 print(f"Order Value:      ${order_value:.2f}")
 print(f"Delivery:         {delivery}")
-print(f"Delivery Cost:    ${delivery_cost:.2f}")
+print(f"Delivery Cost:    ${DELIVERY_COST:.2f}")
 print("-" * 40)
-print(f"TOTAL:            ${TOTAL:.2f}")
-print(f"VAT (20%) Included:        ${TOTAL * 0.2:.2f}")
+print(f"TOTAL:             ${TOTAL:.2f}")
+print(f"VAT(20%) Included: ${TOTAL * 0.2:.2f}")
 print("=" * 40)
 
 #--
