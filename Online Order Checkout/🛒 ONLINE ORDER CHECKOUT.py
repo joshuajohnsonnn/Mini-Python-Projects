@@ -66,7 +66,7 @@ print("=" * 40)
 
 #--
 
-print("✅ Thank you for your order!")
+print("\n ✅ Thank you for your order!")
 print(f"📦 Your order will be delivered to: {Address}")
 print(f"💳 Payment Method: {Payment_Method}")
 if Payment_Method.lower() == "paypal":

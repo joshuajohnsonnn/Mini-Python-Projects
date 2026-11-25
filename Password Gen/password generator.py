@@ -5,6 +5,7 @@ chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@£$%^&*().,?01234
 password = ''
 
 userinput = int(input("How long do you want your password to be?"))
+userinput = int(userinput)
 for x in range(userinput):
     password += random.choice(chars)
 
